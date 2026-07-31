@@ -48,21 +48,18 @@ h1,h2,h3,h4{line-height:1.15;text-wrap:balance;letter-spacing:-0.025em;}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
 
 /* ─── NAV ────────────────────────────────────────── */
-header{position:fixed;top:0;left:0;right:0;z-index:200;transition:background .3s,box-shadow .3s;}
-header.scrolled{background:rgba(10,22,40,.96);box-shadow:0 1px 0 rgba(255,255,255,.06);backdrop-filter:blur(16px);}
+header{position:fixed;top:0;left:0;right:0;z-index:200;background:#fff;box-shadow:0 1px 0 var(--border);transition:box-shadow .3s;}
 .nav-wrap{max-width:1160px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;gap:40px;}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.04em;color:#fff;flex-shrink:0;}
-.logo-mark{width:36px;height:36px;background:var(--blue-lt);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:15px;color:#fff;border-radius:6px;}
-.logo-sub{font-size:10px;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.06em;font-family:'IBM Plex Mono',monospace;margin-top:1px;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.04em;color:var(--ink);flex-shrink:0;}
 .nav-links{display:flex;align-items:center;gap:28px;flex:1;}
-.nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.65);transition:color .2s;}
-.nav-links a:hover{color:#fff;}
+.nav-links a{font-size:14px;font-weight:500;color:var(--mid);transition:color .2s;}
+.nav-links a:hover{color:var(--ink);}
 .nav-end{display:flex;align-items:center;gap:12px;flex-shrink:0;}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;font-size:14px;font-weight:600;border-radius:var(--r);border:none;transition:all .2s;white-space:nowrap;}
-.btn-outline-w{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25);}
-.btn-outline-w:hover{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.07);}
-.btn-primary{background:var(--sky);color:var(--ink);}
-.btn-primary:hover{background:#5EC8F7;transform:translateY(-1px);box-shadow:0 6px 24px rgba(56,178,240,.35);}
+.btn-outline-w{background:transparent;color:var(--ink);border:1.5px solid var(--border);}
+.btn-outline-w:hover{border-color:var(--blue);color:var(--blue);background:var(--bg-soft);}
+.btn-primary{background:var(--blue);color:#fff;}
+.btn-primary:hover{background:var(--blue-lt);transform:translateY(-1px);box-shadow:0 6px 24px rgba(27,79,138,.3);}
 .btn-primary-dk{background:var(--blue);color:#fff;}
 .btn-primary-dk:hover{background:var(--blue-lt);transform:translateY(-1px);box-shadow:0 6px 24px rgba(27,79,138,.4);}
 .btn-lg{padding:15px 32px;font-size:15.5px;}
@@ -221,7 +218,7 @@ footer{background:var(--ink);padding:56px 0 32px;}
 <header id="site-header">
   <div class="nav-wrap">
     <a href="#" class="logo">
-      <img src="logo-nezur-login-192.png" srcset="logo-nezur-login-192.png 1x, logo-nezur-login-512.png 2x" alt="NEZUR by ALVURI" style="height:64px;width:auto;display:block;">
+      <img src="logo-nezur-login-192.png" srcset="logo-nezur-login-192.png 1x, logo-nezur-login-512.png 2x" alt="NEZUR by ALVURI" style="height:40px;width:auto;display:block;">
     </a>
     <nav class="nav-links">
       <a href="#solucao">Solução</a>
@@ -611,7 +608,7 @@ footer{background:var(--ink);padding:56px 0 32px;}
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <img src="logo-nezur-login-192.png" srcset="logo-nezur-login-192.png 1x, logo-nezur-login-512.png 2x" alt="NEZUR by ALVURI" style="height:64px;width:auto;display:block;">
+          <img src="logo-nezur-login-192.png" srcset="logo-nezur-login-192.png 1x, logo-nezur-login-512.png 2x" alt="NEZUR by ALVURI" style="height:40px;width:auto;display:block;">
         </a>
         <p>Sistema de gestão de manutenção industrial desenvolvido pela ALVURI para equipes que precisam de controle real no campo.</p>
       </div>
